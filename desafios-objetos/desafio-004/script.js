@@ -1,75 +1,14 @@
-// Utilizando o foreach na array abaixo,
-// some os valores de Taxa e os valores de Recebimento
+// Retorne um número aleatório
+// entre 1050 e 2000
 
-const transacoes = [
-    {
-        descricao: "Taxa do Pão",
-        valor: "R$ 39",
-    },
-    {
-        descricao: "Taxa do Mercado",
-        valor: "R$ 129",
-    },
-    {
-        descricao: "Recebimento de Cliente",
-        valor: "R$ 99",
-    },
-    {
-        descricao: "Taxa do Banco",
-        valor: "R$ 129",
-    },
-    {
-        descricao: "Recebimento de Cliente",
-        valor: "R$ 49",
-    },
-];
+numeros = numero.Math.random(1050, 2000);
 
-let taxaTotal = 0;
-let recebimentoTotal = 0;
+console.log(numeros);
 
-transacoes.forEach((item) => {
-    const numeroLimpo = +item.valor.replace("R$", "");
-    if (item.descricao.slice(0, 4) === "Taxa") {
-        taxaTotal += numeroLimpo;
-    } else if (item.descricao.slice(0, 4) === "Rece") {
-        recebimentoTotal += numeroLimpo;
-    }
-});
+// Retorne o maior número da lista abaixo
+const numeros = "4, 5, 20, 8, 9";
 
-console.log(taxaTotal);
-console.log(recebimentoTotal);
-
-// Retorne uma array com a lista abaixo
-const transportes = "Carro;Avião;Trem;Ônibus;Bicicleta";
-
-const arrayTransportes = transportes.split(";");
-
-// Substitua todos os span's por a's
-let html = `<ul>
-                  <li><span>Sobre</span></li>
-                  <li><span>Produtos</span></li>
-                  <li><span>Contato</span></li>
-                </ul>`;
-html = html.split("span").join("a");
-
-// Retorne o último caracter da frase
-const frase = "Melhor do ano!";
-console.log(frase.slice(-1));
-
-// Retorne o total de taxas
-const transacoes2 = [
-    "Taxa do Banco",
-    "   TAXA DO PÃO",
-    "  taxa do mercado",
-    "depósito Bancário",
-    "TARIFA especial",
-];
-
-let taxasTotal = 0;
-transacoes2.forEach((item) => {
-    item = item.toLowerCase().trim().slice(0, 4);
-
-    if (item === "taxa") taxasTotal++;
-});
-
-console.log(taxasTotal);
+// Crie uma função para limpar os preços
+// e retornar os números com centavos arredondados
+// depois retorne a soma total
+const listaPrecos = ["R$ 59,99", " R$ 100,222", "R$ 230  ", "r$  200"];
