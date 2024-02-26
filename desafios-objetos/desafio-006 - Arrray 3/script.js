@@ -6,8 +6,8 @@ const comidas = ["Pizza", "Frango", "Carne", "Macarrão"];
 const primeiraComida = comidas.shift();
 const ultimaComida = comidas.pop();
 
-comidas.splice(0, 0, "Peixe", "Batata");
-comidas.splice(5, 4, "Arroz");
+comidas.unshift("Peixe", "Batata"); // E nesse caso vai os valores para o inicio.
+comidas.push("Arroz"); // Vai para o final da array o valor inserido.
 
 console.log(comidas);
 
