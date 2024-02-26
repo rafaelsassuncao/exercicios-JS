@@ -18,10 +18,10 @@ console.log(comidas);
 const estudantes = ["Marcio", "Brenda", "Joana", "Kleber", "Julia"];
 estudantes.sort().reverse();
 
-const verficacaoEstudantes = estudantes.includes("Joana");
+const verficacaoEstudantes = estudantes.includes("Juliana");
 
-console.log(verficacaoEstudantes);
 console.log(estudantes);
+console.log(verficacaoEstudantes);
 
 // Substitua section por ul e div com li,
 // utilizando split e join
@@ -32,8 +32,7 @@ let html = `<section>
               <div>Contato</div>
             </section>`;
 
-html = html.split("div");
-html = html.join("li");
+html = html.split("section").join("ul").split("div").join("li");
 
 console.log(html);
 
