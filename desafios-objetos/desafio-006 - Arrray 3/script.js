@@ -9,15 +9,19 @@ const ultimaComida = comidas.pop();
 comidas.splice(0, 0, "Peixe", "Batata");
 comidas.splice(5, 4, "Arroz");
 
-console.log(primeiraComida);
-console.log(ultimaComida);
 console.log(comidas);
 
-const estudantes = ["Marcio", "Brenda", "Joana", "Kleber", "Julia"];
 // Arrume os estudantes em ordem alfabética
 // Inverta a ordem dos estudantes
 // Verifique se Joana faz parte dos estudantes
 // Verifique se Juliana faz parte dos estudantes
+const estudantes = ["Marcio", "Brenda", "Joana", "Kleber", "Julia"];
+estudantes.sort().reverse();
+
+const verficacaoEstudantes = estudantes.includes("Joana");
+
+console.log(verficacaoEstudantes);
+console.log(estudantes);
 
 let html = `<section>
               <div>Sobre</div>
