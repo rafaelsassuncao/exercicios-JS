@@ -23,14 +23,25 @@ const verficacaoEstudantes = estudantes.includes("Joana");
 console.log(verficacaoEstudantes);
 console.log(estudantes);
 
+// Substitua section por ul e div com li,
+// utilizando split e join
+
 let html = `<section>
               <div>Sobre</div>
               <div>Produtos</div>
               <div>Contato</div>
             </section>`;
-// Substitua section por ul e div com li,
-// utilizando split e join
 
-const carros = ["Ford", "Fiat", "VW", "Honda"];
+html = html.split("div");
+html = html.join("li");
+
+console.log(html);
+
 // Remova o último carro, mas antes de remover
 // salve a array original em outra variável
+const carros = ["Ford", "Fiat", "VW", "Honda"];
+const cloneCarros = carros.slice();
+carros.pop();
+
+console.log(carros);
+console.log(cloneCarros);
