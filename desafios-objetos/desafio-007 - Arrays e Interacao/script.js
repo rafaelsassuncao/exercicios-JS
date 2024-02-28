@@ -3,8 +3,22 @@
 // aulas e horas de cada curso
 
 const cursos = document.querySelectorAll(".curso");
+const arrayCursos = Array.from(cursos);
 
-console.log(cursos);
+const objetosCurso = arrayCursos.map((curso) => {
+    const titulo = curso.querySelector("h1").innerText;
+    const descricao = curso.querySelector("p").innerText;
+    const aulas = curso.querySelector(".aulas").innerText;
+    const horas = curso.querySelector(".horas").innerText;
+    return {
+        titulo,
+        descricao,
+        aulas: aulas.innerText,
+        horas: horas.innerText,
+    };
+});
+
+console.log(objetosCurso);
 
 // Retorne uma lista com os
 // números maiores que 100
