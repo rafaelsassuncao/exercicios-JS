@@ -11,3 +11,5 @@
 // para a direita
 
 // Substitua todas as classes js- por data atributes.
+
+// Resposta dessa aula o professor disse que estão no arquivo animacoes.js
