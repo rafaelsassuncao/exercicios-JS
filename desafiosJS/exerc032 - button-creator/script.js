@@ -40,7 +40,19 @@ function handleChage(event) {
     const value = event.target.value;
 
     handStyle[name](value);
+    saveValues(name, value);
     showCss();
+}
+
+function saveValues(name, value) {
+    localStorage[name];
+}
+
+function setValues() {
+    const properties = Object.keys(localStorage);
+    properties.forEach((propertie) => {
+        controles.element[propertie];
+    });
 }
 
 function showCss() {
