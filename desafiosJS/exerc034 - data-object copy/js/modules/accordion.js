@@ -15,4 +15,4 @@ export default function initAccordion() {
       item.addEventListener('click', activeAccordion);
     });
   }
-}exerc034 - data-object copy
+}
